@@ -1,0 +1,133 @@
+// Type
+///////////////////////////
+
+h1, .h1 {
+  font-feature-settings: "liga";
+  font-size: 230px;
+  font-variant: common-ligatures;
+  font-weight: 700;
+  line-height: .9;
+  margin-top: 130px;
+}
+
+h4, .h4 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    line-height: 1.8;
+    margin-bottom: 1.1em;
+    margin-top: 1.1em;
+}
+
+h3, .h3 {
+  font-family: @font-family-serif;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: .15em;
+  line-height: 1.6;
+  margin-bottom: 1.1em;
+  margin-top: 1.1em;
+  text-transform: uppercase;
+}
+
+h5, .h5 {
+  font-family: @font-family-serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  margin: 1em 0 .4em;
+}
+
+h6, .h6 {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+
+}
+
+cite {
+  font-family: @font-family-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: .08em;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: .04em;
+  line-height: 1.7;
+  margin: 0 0 1em;
+}
+
+
+// Buttons
+.btn {
+  border-radius: 0;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: .25em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  border-width: 3px;
+}
+
+.btn-ghost {
+  color: @brand-primary;
+  background-color: transparent;
+  border: 3px solid @brand-primary;
+
+  &:focus,
+  &.focus {
+    color: white;
+    background-color: @brand-primary;
+        border-color: @brand-primary;
+  }
+  &:hover {
+    color: white;
+    background-color: @brand-primary;
+        border-color: @brand-primary;
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    color: white;
+    background-color: @brand-primary;
+        border-color: @brand-primary;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: white;
+      background-color: @brand-primary;
+          border-color: @brand-primary;
+    }
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: transparent;
+          border-color: @brand-primary;
+    }
+  }
+  .badge {
+    color: transparent;
+    background-color: @brand-primary;
+  }
+}
