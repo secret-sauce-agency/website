@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,19 +8,38 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script>
+  <script>
   (function(d) {
     var config = {
-      kitId: 'vcr4lwe',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        kitId: 'vcr4lwe',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h = d.documentElement,
+      t = setTimeout(function() {
+        h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+      }, config.scriptTimeout),
+      tk = d.createElement("script"),
+      f = false,
+      s = d.getElementsByTagName("script")[0],
+      a;
+    h.className += " wf-loading";
+    tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+    tk.async = true;
+    tk.onload = tk.onreadystatechange = function() {
+      a = this.readyState;
+      if (f || a && a != "complete" && a != "loaded") return;
+      f = true;
+      clearTimeout(t);
+      try {
+        Typekit.load(config)
+      } catch (e) {}
+    };
+    s.parentNode.insertBefore(tk, s)
   })(document);
-</script>
+  </script>
 
   <link rel="stylesheet" href="css/secretsauce-master.min.css">
-
   <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-touch-icon-114x114.png">
@@ -35,132 +55,154 @@
 </head>
 
 <body>
-  <header class="container navigation-container">
-    <ul class="navigation">
-      <li class="navigation-item"> <a href="#"> What We Do </a></li>
-      <li class="navigation-item"> <a href="#"> Our Clients </a></li>
-      <li class="navigation-item"> <a href="#"> Who We Are </a></li>
-      <li class="navigation-item"> <a href="#"> Contact </a></li>
-    </ul>
-    <div class="logo">
-      <img src="img/logo.png" width="210" height="133" alt="Secret Sauce Agency" />
-    </div>
-  </header>
 
-  <section class="container">
-    <h1> First things first </h1>
-    <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
-    <h4> We’re brand & content strategists who believe that putting <span class="underline-yellow">strategy first</span> is always the right choice. WHY before WHAT and HOW.</h4>
-    <h3><em>It's better that way.</em></h3>
-    <div class="button-group text-center-xs">
-      <div class="btn btn-primary hidden-xs"> Talk to Us </div>
-      <div class="btn btn-ghost visible-xs"> Talk to Us </div>
-      <div class="btn btn-ghost"> Workshop It </div>
-    </div>
-  </section>
+  <section class="master-container">
 
-  <section class="container container-what">
-    <h1> What we do </h1>
-    <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
-    <h4>
-      You want to gain more clarity around your brand.
+    <header class="container navigation-container">
+      <ul class="navigation">
+        <li class="navigation-item"> <a href="#"> What We Do </a></li>
+        <li class="navigation-item"> <a href="#"> Our Clients </a></li>
+        <li class="navigation-item"> <a href="#"> Who We Are </a></li>
+        <li class="navigation-item"> <a href="#"> Contact </a></li>
+      </ul>
+      <div class="logo">
+        <img src="img/logo.png" width="210" height="133" alt="Secret Sauce Agency" />
+      </div>
+      <div class="shape-navigation"></div>
+      <div class="shape-navigation-filler"></div>
+    </header>
+
+    <section class="container container-first">
+      <h1> First things first </h1>
+      <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
+      <h4> We’re brand & content strategists who believe that putting <span class="underline-yellow">strategy first</span> is always the right choice. WHY before WHAT and HOW.</h4>
+      <h3><em>It's better that way.</em></h3>
+      <div class="button-group text-center-xs">
+        <div class="btn btn-primary hidden-xs"> Talk to Us </div>
+        <div class="btn btn-ghost visible-xs"> Talk to Us </div>
+        <div class="btn btn-ghost"> Workshop It </div>
+      </div>
+      <div class="home-geo-1"><img src="img/ss_home_geo_1.svg" width="53" height="130" /></div>
+      <div class="home-geo-2"><img src="img/ss_home_geo_2.svg" width="128" height="150" /></div>
+
+      <div class="shape-gray-top-1"></div>
+      <div class="shape-gray-top-2"></div>
+    </section>
+
+    <section class="container container-gray">
+      <h1> What we do </h1>
+      <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
+      <h4>
+      You want to gain more clarity around your brand. <br class="visible-xs" /> <em>Who are you, really?
       <br />
-      <em> Who are you, really? What makes you different? Why should anyone care? </em>
+      What makes you different? <br class="visible-xs" /> Why should anyone care? </em>
     </h4>
-    <h4>
+      <h4>
       Or you need help planning, creating, and managing content.
       <br />
-      <em>But how much content? And what kind? Where should it live?
+      <em>But how much content? <br class="visible-xs" /> And what kind? <br class="visible-xs" /> Where should it live?
       <br />
       Who should be accountable?</em>
     </h4>
-    <h3><em>We’ve got this.</em></h3>
-    <h4>We’ll help you define your unique difference & develop strategies for creating smart, compelling content that reaches the people who matter to you. </h4>
-  </section>
+      <h3><em>We’ve got this.</em></h3>
+      <h4>We’ll help you define your unique difference & develop strategies for creating smart, compelling content that reaches the people who matter to you. </h4>
+      <div class="home-geo-3"><img src="img/ss_home_geo_3.svg" width="106" height="182" /></div>
+    </section>
 
-  <section class="container container-blue hidden-xs">
-  <h4>BRAND + CONTENT STRATEGY <span class="text-secondary">//</span> MESSAGING <span class="text-secondary">//</span> INFORMATION ARCHITECTURE <span class="text-secondary">//</span> COPYWRITING</h4>
-  </section>
+    <section class="container container-blue hidden-xs">
+      <div class="shape-blue-top">
+        <div class="shape-black-top"></div>
+      </div>
+      <h4>BRAND + CONTENT STRATEGY <span class="text-secondary">//</span> MESSAGING <span class="text-secondary">//</span> INFORMATION ARCHITECTURE <span class="text-secondary">//</span> COPYWRITING</h4>
+      <div class="shape-blue-bottom"></div>
+      <div class="home-geo-4"><img src="img/ss_home_geo_4.svg" width="450" height="544" /></div>
+    </section>
 
-  <section class="container container-blue visible-xs">
-  <h4>
+    <section class="container container-blue visible-xs">
+      <h4>
     <span class="text-secondary">//</span> BRAND + CONTENT STRATEGY <br />
     <span class="text-secondary">//</span> MESSAGING <br />
     <span class="text-secondary">//</span> INFORMATION ARCHITECTURE <br />
-    <span class="text-secondary">//</span> COPYWRITING</h4><br />
-  </section>
-
-  <section class="container">
-    <h1> Our clients </h1>
-    <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
-    <h4> Just a few of the <span class="underline-yellow">awesome brands</span> we’ve worked with: </h4>
-    <div class="row client-logos-row">
-      <div class="img-container"><img src="img/logo_siemens.png" width="450" height="72" alt="Client Logo - Siemens" /></div>
-      <div class="img-container"><img src="img/logo_moad.png" width="338" height="132" alt="Client Logo - Moad" /></div>
-      <div class="img-container"><img src="img/logo_cbs.png" width="556" height="108" alt="Client Logo - CBS" /></div>
-      <div class="img-container"><img src="img/logo_479.png" width="272" height="112" alt="Client Logo - 479" /></div>
-      <div class="img-container"><img src="img/logo_moxtra.png" width="440" height="90" alt="Client Logo - Moxtra" /></div>
-      <div class="img-container"><img src="img/logo_abd.png" width="526" height="94" alt="Client Logo - ABD Insurance & Financial Services" /></div>
-      <div class="img-container"><img src="img/logo_anitaborg.png" width="404" height="201" alt="Client Logo - Anita Borg Institute" /></div>
-      <div class="img-container"><img src="img/logo_speck.png" width="400" height="99" alt="Client Logo - Speck" /></div>
-    </div>
-  </section>
-
-  <section class="container testimonial-container">
-    <div class="testimonial">
-      <h4>“There’s an art and science to finding “the voice” and manifesting a brand, and Secret Sauce excels at this.”</h4>
-      <cite>Jean Arnold, CEO &amp; Founder, 479º Degrees</cite>
-    </div>
-  </section>
-
-  <section class="container container-who">
-    <h1> Who we are </h1>
-    <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
-    <div class="row">
-      <div class="col-sm-6 item-who">
-        <img src="img/jennifer_pic.png" width="486" height="640" alt="Jennifer Jeffrey Photo" class="img-who"/>
-        <h5> Jennifer Jeffrey </h5>
-        <h6><span class="underline-yellow"> Strategist + Writer </span></h6>
-        <p>A former biologist who left the lab for the 90’s era dot-com boom, Jennifer has a keen appreciation for the importance of strategy. She relishes the challenge of helping teams develop focus and alignment, and advocates for getting the basics right. Between sweet and salty, she’ll choose salty every time.</p>
-        <a class="social-icon" href="https://twitter.com/jenniferjeffrey"><img src="img/ss_twitter_black.svg" width="24" height="20" alt="Twitter Logo" /></a>
-        <a class="social-icon" href="https://instagram.com/jenniferjeffrey"><img src="img/ss_instagram.svg" width="21" height="21" alt="Instagram Logo" /></a>
-      </div>
-      <div class="col-sm-6 item-who">
-        <img src="img/natalie_pic.png" width="516" height="662" alt="Natalie Greenfield Jeffrey Photo" class="img-who"/>
-        <h5> Natalie Greenfield </h5>
-        <h6><span class="underline-yellow"> Copywriter + Social Media Whiz </span></h6>
-        <p>Natalie is a pop culture junkie and Kim K fangirl, a rare millennial who can speak both emoji and B2B. She’s been known to work a Twitter feed and write a data sheet on cloud computing without breaking a sweat. You can’t beat her pun game, so don’t even try. Fuel of choice: cold-brew coffee.</p>
-        <a class="social-icon" href="https://twitter.com/nataliegfld"><img src="img/ss_twitter_black.svg" width="24" height="20" alt="Twitter Logo" /></a>
-      </div>
-    </div>
-
-    <h3> We’ve also got an incredible network of strategists, writers, designers, and developers we pull into projects as needed. Not quite on-demand, but close enough. </h3>
-  </section>
-
-  <section class="container container-yellow text-center-xs">
-    <h4>We want to hear about your brand, project, website, or other content strategy needs. </h4>
-    <a class="btn btn-ghost"> Contact Us </a>
-  </section>
-
-
-  <footer>
-    <section class="container text-center-xs">
-      <img src="img/s_icon.png" width="75" height="75" alt="Secret Sauce Icon" class="logo" />
-      <p>Secret Sauce is based in San Francisco, land of fog + delicious cheese.</p>
-      <a href="#"><img src="img/ss_twitter_gray.svg" width="19" height="16" alt="Twitter" class="social-icon" /></a>
-      <a href="#"><img src="img/ss_linked_in.svg" width="18" height="18" alt="Linkedin" class="social-icon" /></a>
-      <a class="hidden-xs" href="#" class="icon-scrollTop"><img src="img/top.png" width="50" height="59" alt="Scroll to Top Icon" /></a>
+    <span class="text-secondary">//</span> COPYWRITING</h4>
       <br />
-      <div class="text-center pad-v-xl">
-        <a class="visible-xs" href="#" class="icon-scrollTop"><img src="img/top.png" width="50" height="59" alt="Scroll to Top Icon" /></a>
+    </section>
+
+    <section class="container container-clients">
+      <h1> Our clients </h1>
+      <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
+      <h4> Just a few of the <span class="underline-yellow">awesome brands</span> we’ve worked with: </h4>
+      <div class="row client-logos-row">
+        <div class="img-container"><img src="img/logo_siemens.png" width="450" height="72" alt="Client Logo - Siemens" /></div>
+        <div class="img-container"><img src="img/logo_moad.png" width="338" height="132" alt="Client Logo - Moad" /></div>
+        <div class="img-container"><img src="img/logo_cbs.png" width="556" height="108" alt="Client Logo - CBS" /></div>
+        <div class="img-container"><img src="img/logo_479.png" width="272" height="112" alt="Client Logo - 479" /></div>
+        <div class="img-container"><img src="img/logo_moxtra.png" width="440" height="90" alt="Client Logo - Moxtra" /></div>
+        <div class="img-container"><img src="img/logo_abd.png" width="526" height="94" alt="Client Logo - ABD Insurance & Financial Services" /></div>
+        <div class="img-container"><img src="img/logo_anitaborg.png" width="404" height="201" alt="Client Logo - Anita Borg Institute" /></div>
+        <div class="img-container"><img src="img/logo_speck.png" width="400" height="99" alt="Client Logo - Speck" /></div>
+      </div>
+      <div class="home-geo-5"><img src="img/ss_home_geo_5.svg" width="85" height="82" /></div>
+    </section>
+
+    <section class="container container-testimonial">
+      <div class="testimonial">
+        <div class="testimonial-inner">
+          <h4>“There’s an art and science to finding “the voice” and manifesting a brand, and Secret Sauce excels at this.”</h4>
+          <cite>Jean Arnold, CEO &amp; Founder, 479º Degrees</cite>
+        </div>
       </div>
     </section>
-  </footer>
+
+    <section class="container container-team">
+      <h1> Who we are </h1>
+      <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
+      <div class="row">
+        <div class="col-sm-6 item-team">
+          <img src="img/jennifer_pic.png" width="486" height="640" alt="Jennifer Jeffrey Photo" class="img-team" />
+          <h5> Jennifer Jeffrey </h5>
+          <h6><span class="underline-yellow"> Strategist + Writer </span></h6>
+          <p>A former biologist who left the lab for the 90’s era dot-com boom, Jennifer has a keen appreciation for the importance of strategy. She relishes the challenge of helping teams develop focus and alignment, and advocates for getting the basics right. Between sweet and salty, she’ll choose salty every time.</p>
+          <a class="social-icon" href="https://twitter.com/jenniferjeffrey"><img src="img/ss_twitter_black.svg" width="24" height="20" alt="Twitter Logo" /></a>
+          <a class="social-icon" href="https://instagram.com/jenniferjeffrey"><img src="img/ss_instagram.svg" width="21" height="21" alt="Instagram Logo" /></a>
+        </div>
+        <div class="col-sm-6 item-team">
+          <img src="img/natalie_pic.png" width="516" height="662" alt="Natalie Greenfield Jeffrey Photo" class="img-team" />
+          <h5> Natalie Greenfield </h5>
+          <h6><span class="underline-yellow"> Copywriter + Social Media Whiz </span></h6>
+          <p>Natalie is a pop culture junkie and Kim K fangirl, a rare millennial who can speak both emoji and B2B. She’s been known to work a Twitter feed and write a data sheet on cloud computing without breaking a sweat. You can’t beat her pun game, so don’t even try. Fuel of choice: cold-brew coffee.</p>
+          <a class="social-icon" href="https://twitter.com/nataliegfld"><img src="img/ss_twitter_black.svg" width="24" height="20" alt="Twitter Logo" /></a>
+        </div>
+      </div>
+      <h3> We’ve also got an incredible network of strategists, writers, designers, and developers we pull into projects as needed. Not quite on-demand, but close enough. </h3>
+      <div class="home-geo-6"><img src="img/ss_home_geo_6.svg" width="91" height="133" /></div>
+      <div class="home-geo-7"><img src="img/ss_home_geo_7.svg" width="131" height="157" /></div>
+    </section>
+
+    <section class="container container-yellow text-center-xs">
+      <div class="shape-yellow-top"></div>
+      <h4>We want to hear about your brand, project, website, or other content strategy needs. </h4>
+      <a class="btn btn-ghost"> Contact Us </a>
+      <div class="shape-yellow-bottom"></div>
+      <div class="home-geo-8"><img src="img/ss_home_geo_8.svg" width="400" height="128" /></div>
+    </section>
+
+    <footer>
+      <div class="shape-black-bottom"></div>
+      <section class="container text-center-xs">
+        <img src="img/s_icon.png" width="60" height="60" alt="Secret Sauce Icon" class="logo" />
+        <p>Secret Sauce is based in San Francisco, land of fog + delicious cheese.</p>
+        <a href="#"><img src="img/ss_twitter_gray.svg" width="19" height="16" alt="Twitter" class="social-icon" /></a>
+        <a href="#"><img src="img/ss_linked_in.svg" width="18" height="18" alt="Linkedin" class="social-icon" /></a>
+        <a href="#" class="icon-scrollTop"><img src="img/top.png" width="40" height="47" alt="Scroll to Top Icon" /></a>
+      </section>
+    </footer>
+
+  </section>
 
 </body>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <!-- <script type="text/javascript" src="js/secretsauce-master.min.js"></script> -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/secretsauce-master.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </html>
