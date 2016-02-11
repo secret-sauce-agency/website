@@ -60,9 +60,9 @@
 
     <header class="container navigation-container">
       <ul class="navigation">
-        <li class="navigation-item"> <a href="#"> Workshops </a></li>
-        <li class="navigation-item"> <a href="#"> Let's Talk </a></li>
-        <li class="navigation-item"> <a href="#"> Home </a></li>
+        <li class="navigation-item"> <a href="#workshops"> Workshops </a></li>
+        <li class="navigation-item"> <a href="#" data-toggle="modal" data-target="#contact"> Let's Talk </a></li>
+        <li class="navigation-item"> <a href="index.html"> Home </a></li>
       </ul>
       <div class="logo">
         <img src="img/logo.png" width="210" height="133" alt="Secret Sauce Agency" />
@@ -76,14 +76,14 @@
       <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
       <h4> Kick off a new project or rev up an ongiong one. We'll bring the right people together in the same room to solve problems, identify priorities, and generate <span class="underline-yellow">breakthrough ideas.</span> </h4>
       <div class="button-group text-center-xs">
-        <div class="btn btn-ghost"> Book A Date </div>
+        <a class="btn btn-ghost" href="#" data-toggle="modal" data-target="#contact"> Book A Date </a>
       </div>
       <div class="workshop-geo-1"><img src="img/ss_workshops_geo_1.svg" width="79" height="104" /></div>
     </section>
 
 
     <section class="container container-workshops-blue">
-      <div class="shape-white-top-1"></div>
+      <div class="shape-white-top-1 hidden-xs"></div>
       <div class="workshops-blue-inner">
         <h3><em>Nothing works better than face to face, eye to eye, and voice to voice.</em></h3>
         <h4>Whether your team is 3 people or 30, we can design a workshop that moves you forward. Your people will walk away with a solid understanding of where your brand or project is headed, the role they play in the process, and why it matters.</h4>
@@ -95,6 +95,7 @@
       <h4>&nbsp;</h4>
     </section>
 
+    <a name="workshops"></a>
     <section class="container container-workshops">
       <h1> Workshops: <small>we&#8217;ve got a few</small></h1>
       <br />
@@ -102,7 +103,7 @@
       <h4> Hone your brand story. Clean up your content. Un-break your wesbsite. Here are a few of the topics we regularly cover in our workshops. </h4>
 
       <div class="row">
-        <div class="col-sm-6 pad-v-sm">
+        <div class="col-xs-12 col-sm-6">
           <div class="item-yellow-1">
             <h5 class="text-center"><span class="underline-white"> Brand Messaging </span></h5>
             <h6 class="text-center">Focused sessions that help you get clarity around:</h6>
@@ -118,7 +119,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 pad-v-sm">
+        <div class="col-xs-12 col-sm-6">
           <div class="item-yellow-2">
             <h5 class="text-center"><span class="underline-white"> Content Strategy </span></h5>
             <h6 class="text-center">Sessions taylored to your needs, which may include:</h6>
@@ -146,7 +147,7 @@
       <div class="container-stripe-inner">
         <h4>Ready to workshop your idea, project, or brand? </h4>
         <div class="button-group">
-          <div class="btn btn-ghost"> Let's Talk </div>
+          <a class="btn btn-ghost" href="#" data-toggle="modal" data-target="#contact"> Let's Talk </a>
         </div>
       </div>
       <div class="workshop-geo-6"><img src="img/ss_workshops_geo_6.svg" width="450" height="344" /></div>
@@ -159,17 +160,66 @@
       <section class="container text-center-xs">
         <img src="img/s_icon.png" width="60" height="60" alt="Secret Sauce Icon" class="logo" />
         <p>Secret Sauce is based in San Francisco, land of fog + delicious cheese.</p>
-        <a href="#"><img src="img/ss_twitter_gray.svg" width="19" height="16" alt="Twitter" class="social-icon" /></a>
-        <a href="#"><img src="img/ss_linked_in.svg" width="18" height="18" alt="Linkedin" class="social-icon" /></a>
+        <a href="#" target="_blank"><img src="img/ss_twitter_gray.svg" width="19" height="16" alt="Twitter" class="social-icon" /></a>
+        <a href="#" target="_blank"><img src="img/ss_linked_in.svg" width="18" height="18" alt="Linkedin" class="social-icon" /></a>
         <a href="#" class="icon-scrollTop"><img src="img/top.png" width="40" height="47" alt="Scroll to Top Icon" /></a>
       </section>
     </footer>
+<!-- Modal -->
+  <div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <a href="#" class="close" data-dismiss="modal">&times;</a>
+          <h2>Tell us about yourself:</h2>
+          <input type="text" class="form-control" id="firstName" placeholder="FIRST NAME*">
+          <input type="text" class="form-control" id="lastName" placeholder="LAST NAME*">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL*">
+          <input type="text" class="form-control" id="companyName" placeholder="COMPANY NAME">
+          <input type="text" class="form-control" id="website" placeholder="YOUR WEBSITE*">
+
+          <h2>What can we help you with? <sup class="text-secondary"> * </sup> </h2>
+          <div class="row">
+            <div class="col-xs-6">
+              <label>
+                <input type="checkbox" value="Brand Stuff">
+                BRAND STUFF
+              </label>
+              <br />
+              <label>
+                <input type="checkbox" value="Workshop">
+                WORKSHOP
+              </label>
+            </div>
+            <div class="col-xs-6">
+              <label>
+                <input type="checkbox" value="Content Stuff">
+                CONTENT STUFF
+              </label>
+              <br />
+              <label>
+                <input type="checkbox" value="Other">
+                OTHER
+              </label>
+            </div>
+          </div>
+
+          <h2>Tell us a little more about your project, brand, or idea: <sup class="text-secondary"> * </sup> </h2>
+          <textarea class="form-control" rows="5"></textarea>
+
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-ghost-white">SEND IT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
 
   </section>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="js/secretsauce-master.min.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </html>

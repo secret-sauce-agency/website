@@ -60,10 +60,10 @@
 
     <header class="container navigation-container">
       <ul class="navigation">
-        <li class="navigation-item"> <a href="#"> What We Do </a></li>
-        <li class="navigation-item"> <a href="#"> Our Clients </a></li>
-        <li class="navigation-item"> <a href="#"> Who We Are </a></li>
-        <li class="navigation-item"> <a href="#"> Contact </a></li>
+        <li class="navigation-item"> <a href="#what-we-do"> What We Do </a></li>
+        <li class="navigation-item"> <a href="#our-clients"> Our Clients </a></li>
+        <li class="navigation-item"> <a href="#who-we-are"> Who We Are </a></li>
+        <li class="navigation-item"> <a href="#" data-toggle="modal" data-target="#contact"> Contact </a></li>
       </ul>
       <div class="logo">
         <img src="img/logo.png" width="210" height="133" alt="Secret Sauce Agency" />
@@ -78,9 +78,9 @@
       <h4> We’re brand & content strategists who believe that putting <span class="underline-yellow">strategy first</span> is always the right choice. WHY before WHAT and HOW.</h4>
       <h3><em>It's better that way.</em></h3>
       <div class="button-group text-center-xs">
-        <div class="btn btn-primary hidden-xs"> Talk to Us </div>
-        <div class="btn btn-ghost visible-xs"> Talk to Us </div>
-        <div class="btn btn-ghost"> Workshop It </div>
+        <a href="#" data-toggle="modal" data-target="#contact" class="btn btn-primary hidden-xs"> Talk to Us </a>
+        <a href="#" data-toggle="modal" data-target="#contact" class="btn btn-ghost visible-xs"> Talk to Us </a>
+        <a href="workshops.html" class="btn btn-ghost"> Workshop It </a>
       </div>
       <div class="home-geo-1"><img src="img/ss_home_geo_1.svg" width="53" height="130" /></div>
       <div class="home-geo-2"><img src="img/ss_home_geo_2.svg" width="128" height="150" /></div>
@@ -89,6 +89,7 @@
       <div class="shape-gray-top-2"></div>
     </section>
 
+    <a name="what-we-do"></a>
     <section class="container container-gray">
       <h1> What we do </h1>
       <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
@@ -109,28 +110,34 @@
       <div class="home-geo-3"><img src="img/ss_home_geo_3.svg" width="106" height="182" /></div>
     </section>
 
-    <section class="container container-blue hidden-xs">
+    <section class="container container-blue">
       <div class="shape-blue-top">
         <div class="shape-black-top"></div>
       </div>
-      <h4>BRAND + CONTENT STRATEGY <span class="text-secondary">//</span> MESSAGING <span class="text-secondary">//</span> INFORMATION ARCHITECTURE <span class="text-secondary">//</span> COPYWRITING</h4>
+      <h4>
+        <span class="text-secondary visible-xs">//</span>
+        BRAND + CONTENT STRATEGY
+        <br class="visible-xs" />
+        <span class="text-secondary">//</span>
+        MESSAGING
+        <br class="visible-xs" />
+        <span class="text-secondary">//</span>
+        INFORMATION ARCHITECTURE
+        <br class="visible-xs" />
+        <span class="text-secondary">//</span>
+        COPYWRITING
+        <br class="visible-xs" />
+      </h4>
       <div class="shape-blue-bottom"></div>
       <div class="home-geo-4"><img src="img/ss_home_geo_4.svg" width="450" height="544" /></div>
     </section>
 
-    <section class="container container-blue visible-xs">
-      <h4>
-    <span class="text-secondary">//</span> BRAND + CONTENT STRATEGY <br />
-    <span class="text-secondary">//</span> MESSAGING <br />
-    <span class="text-secondary">//</span> INFORMATION ARCHITECTURE <br />
-    <span class="text-secondary">//</span> COPYWRITING</h4>
-      <br />
-    </section>
-
+    <a name="our-clients"></a>
     <section class="container container-clients">
       <h1> Our clients </h1>
       <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
-      <h4> Just a few of the <span class="underline-yellow">awesome brands</span> we’ve worked with: </h4>
+      <h4 class="hidden-xs"> Just a few of the <span class="underline-yellow">awesome brands</span> we’ve worked with: </h4>
+      <h4 class="visible-xs"> Just a few of the <span class="underline-yellow">awesome</span> brands we’ve worked with: </h4>
       <div class="row client-logos-row">
         <div class="img-container"><img src="img/logo_siemens.png" width="450" height="72" alt="Client Logo - Siemens" /></div>
         <div class="img-container"><img src="img/logo_moad.png" width="338" height="132" alt="Client Logo - Moad" /></div>
@@ -148,11 +155,12 @@
       <div class="testimonial">
         <div class="testimonial-inner">
           <h4>“There’s an art and science to finding “the voice” and manifesting a brand, and Secret Sauce excels at this.”</h4>
-          <cite>Jean Arnold, CEO &amp; Founder, 479º Degrees</cite>
+          <cite>Jean Arnold, <br class="visible-xs" /> CEO &amp; Founder, 479º Degrees</cite>
         </div>
       </div>
     </section>
 
+    <a name="who-we-are"></a>
     <section class="container container-team">
       <h1> Who we are </h1>
       <img src="img/thin_line.png" width="429" height="8" alt="Separator" class="separator" />
@@ -162,15 +170,15 @@
           <h5> Jennifer Jeffrey </h5>
           <h6><span class="underline-yellow"> Strategist + Writer </span></h6>
           <p>A former biologist who left the lab for the 90’s era dot-com boom, Jennifer has a keen appreciation for the importance of strategy. She relishes the challenge of helping teams develop focus and alignment, and advocates for getting the basics right. Between sweet and salty, she’ll choose salty every time.</p>
-          <a class="social-icon" href="https://twitter.com/jenniferjeffrey"><img src="img/ss_twitter_black.svg" width="24" height="20" alt="Twitter Logo" /></a>
-          <a class="social-icon" href="https://instagram.com/jenniferjeffrey"><img src="img/ss_instagram.svg" width="21" height="21" alt="Instagram Logo" /></a>
+          <a class="social-icon" href="https://twitter.com/jenniferjeffrey" target="_blank"><img src="img/ss_twitter_black.svg" width="24" height="20" alt="Twitter Logo" /></a>
+          <a class="social-icon" href="https://instagram.com/jenniferjeffrey" target="_blank"><img src="img/ss_instagram.svg" width="21" height="21" alt="Instagram Logo" /></a>
         </div>
         <div class="col-sm-6 item-team">
           <img src="img/natalie_pic.png" width="516" height="662" alt="Natalie Greenfield Jeffrey Photo" class="img-team" />
           <h5> Natalie Greenfield </h5>
           <h6><span class="underline-yellow"> Copywriter + Social Media Whiz </span></h6>
           <p>Natalie is a pop culture junkie and Kim K fangirl, a rare millennial who can speak both emoji and B2B. She’s been known to work a Twitter feed and write a data sheet on cloud computing without breaking a sweat. You can’t beat her pun game, so don’t even try. Fuel of choice: cold-brew coffee.</p>
-          <a class="social-icon" href="https://twitter.com/nataliegfld"><img src="img/ss_twitter_black.svg" width="24" height="20" alt="Twitter Logo" /></a>
+          <a class="social-icon" href="https://twitter.com/nataliegfld" target="_blank"><img src="img/ss_twitter_black.svg" width="24" height="20" alt="Twitter Logo" /></a>
         </div>
       </div>
       <h3> We’ve also got an incredible network of strategists, writers, designers, and developers we pull into projects as needed. Not quite on-demand, but close enough. </h3>
@@ -181,7 +189,7 @@
     <section class="container container-yellow text-center-xs">
       <div class="shape-yellow-top"></div>
       <h4>We want to hear about your brand, project, website, or other content strategy needs. </h4>
-      <a class="btn btn-ghost"> Contact Us </a>
+      <a href="#" data-toggle="modal" data-target="#contact" class="btn btn-ghost"> Contact Us </a>
       <div class="shape-yellow-bottom"></div>
       <div class="home-geo-8"><img src="img/ss_home_geo_8.svg" width="400" height="128" /></div>
     </section>
@@ -191,18 +199,68 @@
       <section class="container text-center-xs">
         <img src="img/s_icon.png" width="60" height="60" alt="Secret Sauce Icon" class="logo" />
         <p>Secret Sauce is based in San Francisco, land of fog + delicious cheese.</p>
-        <a href="#"><img src="img/ss_twitter_gray.svg" width="19" height="16" alt="Twitter" class="social-icon" /></a>
-        <a href="#"><img src="img/ss_linked_in.svg" width="18" height="18" alt="Linkedin" class="social-icon" /></a>
+        <a href="#" target="_blank"><img src="img/ss_twitter_gray.svg" width="19" height="16" alt="Twitter" class="social-icon" /></a>
+        <a href="#" target="_blank"><img src="img/ss_linked_in.svg" width="18" height="18" alt="Linkedin" class="social-icon" /></a>
         <a href="#" class="icon-scrollTop"><img src="img/top.png" width="40" height="47" alt="Scroll to Top Icon" /></a>
       </section>
     </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <a href="#" class="close" data-dismiss="modal">&times;</a>
+          <h2>Tell us about yourself:</h2>
+          <input type="text" class="form-control" id="firstName" placeholder="FIRST NAME*">
+          <input type="text" class="form-control" id="lastName" placeholder="LAST NAME*">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL*">
+          <input type="text" class="form-control" id="companyName" placeholder="COMPANY NAME">
+          <input type="text" class="form-control" id="website" placeholder="YOUR WEBSITE*">
+
+          <h2>What can we help you with? <sup class="text-secondary"> * </sup> </h2>
+          <div class="row">
+            <div class="col-xs-6">
+              <label>
+                <input type="checkbox" value="Brand Stuff">
+                BRAND STUFF
+              </label>
+              <br />
+              <label>
+                <input type="checkbox" value="Workshop">
+                WORKSHOP
+              </label>
+            </div>
+            <div class="col-xs-6">
+              <label>
+                <input type="checkbox" value="Content Stuff">
+                CONTENT STUFF
+              </label>
+              <br />
+              <label>
+                <input type="checkbox" value="Other">
+                OTHER
+              </label>
+            </div>
+          </div>
+
+          <h2>Tell us a little more about your project, brand, or idea: <sup class="text-secondary"> * </sup> </h2>
+          <textarea class="form-control" rows="5"></textarea>
+
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-ghost-white">SEND IT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
 
   </section>
 
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="js/secretsauce-master.min.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </html>
