@@ -116,7 +116,7 @@
       </div>
       <h4>
         <span class="text-secondary visible-xs">//</span>
-        BRAND + CONTENT STRATEGY
+       BRAND + CONTENT STRATEGY
         <br class="visible-xs" />
         <span class="text-secondary">//</span>
         MESSAGING
@@ -199,8 +199,8 @@
       <section class="container text-center-xs">
         <img src="img/s_icon.png" width="60" height="60" alt="Secret Sauce Icon" class="logo" />
         <p>Secret Sauce is based in San Francisco, land of fog + delicious cheese.</p>
-        <a href="#" target="_blank"><img src="img/ss_twitter_gray.svg" width="19" height="16" alt="Twitter" class="social-icon" /></a>
-        <a href="#" target="_blank"><img src="img/ss_linked_in.svg" width="18" height="18" alt="Linkedin" class="social-icon" /></a>
+        <a href="http://twitter.com/jenniferjeffrey" target="_blank"><img src="img/ss_twitter_gray.svg" width="19" height="16" alt="Twitter" class="social-icon" /></a>
+        <a href="https://www.linkedin.com/company/secret-sauce-llc" target="_blank"><img src="img/ss_linked_in.svg" width="18" height="18" alt="Linkedin" class="social-icon" /></a>
         <a href="#" class="icon-scrollTop"><img src="img/top.png" width="40" height="47" alt="Scroll to Top Icon" /></a>
       </section>
     </footer>
@@ -212,10 +212,11 @@
         <div class="modal-body">
           <a href="#" class="close" data-dismiss="modal">&times;</a>
           <h2>Tell us about yourself:</h2>
-          <input type="text" class="form-control" id="firstName" placeholder="FIRST NAME*">
-          <input type="text" class="form-control" id="lastName" placeholder="LAST NAME*">
-          <input type="email" class="form-control" id="email" placeholder="EMAIL*">
-          <input type="text" class="form-control" id="companyName" placeholder="COMPANY NAME">
+          <form action="//formspree.io/kevinburgee@aol.com" method="POST">
+          <input type="text" name="name" class="form-control" id="firstName" placeholder="FIRST NAME*">
+          <input type="text" name="name" class="form-control" id="lastName" placeholder="LAST NAME*">
+          <input type="email" name="_replyto" class="form-control" id="email" placeholder="EMAIL*">
+          <input type="text" name="name" class="form-control" id="companyName" placeholder="COMPANY NAME">
           <input type="text" class="form-control" id="website" placeholder="YOUR WEBSITE*">
 
           <h2>What can we help you with? <sup class="text-secondary"> * </sup> </h2>
@@ -243,13 +244,14 @@
               </label>
             </div>
           </div>
+          </form>
 
           <h2>Tell us a little more about your project, brand, or idea: <sup class="text-secondary"> * </sup> </h2>
           <textarea class="form-control" rows="5"></textarea>
 
         </div>
         <div class="modal-footer">
-          <a type="button" class="btn btn-ghost-white">SEND IT</a>
+          <input  type="submit" value="SEND IT" class="btn btn-ghost-white">
         </div>
       </div>
     </div>
