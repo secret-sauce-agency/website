@@ -151,14 +151,41 @@
       <div class="home-geo-5"><img src="img/ss_home_geo_5.svg" width="85" height="82" /></div>
     </section>
 
-    <section class="container container-testimonial">
-      <div class="testimonial">
-        <div class="testimonial-inner">
+    <!-- Testimonial Slider -->
+    <div id="testimonialSlider" class="container carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner testimonial" role="listbox">
+        <div class="item active">
+        <div class="item-inner">
+          <h4>“Secret Sauce has been instrumental in helping us build our brand, deliver effective messaging, and create a social movement. They are our indispensable partner in changing the world.”</h4>
+          <cite>Elizabeth Ames, SVP, Marketing, Alliances, and Programs, <br /> Anita Borg Institute</cite>
+        </div>
+        </div>
+
+        <div class="item">
+        <div class="item-inner">
           <h4>“There’s an art and science to finding ‘the voice’ and manifesting a brand, and Secret Sauce excels at this.”</h4>
           <cite>Jean Arnold, <br class="visible-xs" /> CEO &amp; Founder, 479º Degrees</cite>
         </div>
+        </div>
+
+        <div class="item">
+        <div class="item-inner">
+          <h4>“Jennifer is a rare find. She has an outstanding ability to help brands gain clarity and focus around their position and vision. Her brand messaging framework is smart, effective, and actionable.”</h4>
+          <cite>Katie Jansen, <br class="visible-xs" /> CMO, AppLovin</cite>
+        </div>
+        </div>
       </div>
-    </section>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#testimonialSlider" role="button" data-slide="prev">
+        <svg width="30px" height="47px" viewBox="0 0 37 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1"><feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix><feMerge><feMergeNode in="shadowMatrixOuter1"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><g id="Shape" filter="url(#filter-1)" transform="translate(3.000000, 0.000000)" fill="#FFFFFF"><path d="M19.1158938,10.0000003 C23.1798938,14.9380003 27.2898938,19.8400003 31.2998938,24.8220003 C34.1038938,28.3070003 36.9148938,31.8040003 39.4358938,35.4930003 C40.4818938,37.0230003 40.7778938,39.0650003 40.6358938,41.3580003 C35.0868938,36.4550003 29.5558938,31.5310003 23.9848938,26.6550003 C21.0018938,24.0450003 18.1228938,22.3620003 14.6998938,26.3980003 C12.2538938,29.2850003 9.14789381,31.6040003 6.43789381,34.2810003 C3.13389381,37.5450003 -0.706106193,39.4060003 -5.39110619,39.7720003 C-9.04710619,40.0580003 -9.84910619,38.2990003 -8.14210619,35.7190003 C-6.34710619,33.0050003 -3.82610619,30.7470003 -1.49610619,28.4150003 C4.66989381,22.2410003 10.9068938,16.1340003 17.1158938,10.0000003 L19.1158938,10.0000003 L19.1158938,10.0000003 L19.1158938,10.0000003 Z" id="Shape" transform="translate(15.834598, 25.679000) rotate(-90.000000) translate(-15.834598, -25.679000) "></path></g></svg>
+      </a>
+      <a class="right carousel-control" href="#testimonialSlider" role="button" data-slide="next">
+        <svg width="38px" height="56px" viewBox="0 0 38 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1"><feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix><feMerge><feMergeNode in="shadowMatrixOuter1"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><g id="Shape-Copy" filter="url(#filter-1)" transform="translate(3.000000, 1.000000)" fill="#FFFFFF"><path d="M18.9602962,9.155598 C23.0242962,14.093598 27.1342962,18.995598 31.1442962,23.977598 C33.9482962,27.462598 36.7592962,30.959598 39.2802962,34.648598 C40.3262962,36.178598 40.6222962,38.220598 40.4802962,40.513598 C34.9312962,35.610598 29.4002962,30.686598 23.8292962,25.810598 C20.8462962,23.200598 17.9672962,21.517598 14.5442962,25.553598 C12.0982962,28.440598 8.99229623,30.759598 6.28229623,33.436598 C2.97829623,36.700598 -0.861703778,38.561598 -5.54670377,38.927598 C-9.20270377,39.213598 -10.0047038,37.454598 -8.29770377,34.874598 C-6.50270377,32.160598 -3.98170377,29.902598 -1.65170377,27.570598 C4.51429623,21.396598 10.7512962,15.289598 16.9602962,9.155598 L18.9602962,9.155598 L18.9602962,9.155598 L18.9602962,9.155598 Z" id="Shape-Copy" transform="translate(15.679000, 24.834598) rotate(90.000000) translate(-15.679000, -24.834598) "></path></g></svg>
+      </a>
+    </div>
+    <!-- / Testimonial Slider -->
 
     <a name="who-we-are"></a>
     <section class="container container-team">

@@ -3,7 +3,7 @@
 // needs jquery <1.12.0
 $(function() {
 
-$("a[href*=#]:not([href=#])").click(function() {
+$("a[href*=#]:not([href=#testimonialSlider])").click(function() {
   if (
     location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,") ||
     location.hostname == this.hostname
