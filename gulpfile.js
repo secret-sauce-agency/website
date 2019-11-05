@@ -40,7 +40,7 @@ gulp.task("less", function() {
 });
 
 gulp.task("watchLESS", function() {
-  gulp.watch(lessWatchFolder, ["less"]);
+  gulp.watch(lessWatchFolder), gulp.series("less");
 });
 
 gulp.task("default", gulp.series("less", "watchLESS"));
